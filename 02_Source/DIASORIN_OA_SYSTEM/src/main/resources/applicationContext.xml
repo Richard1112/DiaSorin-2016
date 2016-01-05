@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		http://www.springframework.org/schema/jee 
+		http://www.springframework.org/schema/jee/spring-jee-3.1.xsd
+		http://www.springframework.org/schema/data/jpa 
+		http://www.springframework.org/schema/data/jpa/spring-jpa-1.0.xsd
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+		http://www.springframework.org/schema/mvc
+		http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
+		 
+	<context:component-scan base-package="com.diasorin.oa" />
+
+	<jpa:repositories base-package="com.diasorin.oa.dao" />
+	
+	<!-- 定义实体管理器工厂 -->
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="persistenceUnitName" value="DIASORIN_OA_SYSTEM"/>
+	</bean>
+
+	<tx:jta-transaction-manager />
+
+	<!-- 配置事务管理器 -->
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>
+	
+	<!-- 加载事务管理器 -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="*Add" rollback-for="Exception"/>
+			<tx:method name="*Delete" rollback-for="Exception"/>
+			<tx:method name="*Update" rollback-for="Exception"/>
+			<tx:method name="*Add" rollback-for="Exception"/>
+			<tx:method name="*Change" rollback-for="Exception"/>
+			<tx:method name="*Approve" rollback-for="Exception"/>
+			<tx:method name="*Reject" rollback-for="Exception"/>
+			<tx:method name="insertLoginHisAndUpdateStatus" rollback-for="Exception"/>
+			<tx:method name="loginOut" rollback-for="Exception"/>
+			<tx:method name="authorityInfoCreate" rollback-for="Exception"/>
+			<tx:method name="expenseRejectAll" rollback-for="Exception"/>
+			<tx:method name="expensesClaim" rollback-for="Exception"/>
+			<tx:method name="expenseUndoFinished" rollback-for="Exception"/>
+			
+		</tx:attributes>
+	</tx:advice>
+	
+	<aop:config>
+		<aop:pointcut id="userOperation"
+			expression="execution(public  * com.diasorin.oa.service.impl.*.*(..))" />
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="userOperation" />
+	</aop:config>
+</beans>

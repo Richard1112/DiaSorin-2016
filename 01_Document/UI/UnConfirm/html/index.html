@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="css/index.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="js/news.js"></script>
+<script>
+  function init(){
+  //  document.getElementById("iframe").src="";
+  }
+  function Action1(url){
+	  document.getElementById("iframe").src=url;
+  }
+  	function openD(url){
+		window.showModalDialog(url,null,"dialogWidth=450px;dialogHeight=162px;status=no;help=no;scroll=no;resizable=no;location=no;toolbar=no");
+	}
+</script>
+</head>
+
+<body>
+	<div id="index_top">
+    	<div id="index_logo"></div>
+        <div id="index_user">
+        	<a href="#"><img src="images/index_user.png" /></a>
+            <a href="#"><img src="images/sign_out.png" /></a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="index_main_box">
+    	<div id="index_main_left_box">
+        <input type="hidden" id="hidshow" name="hidshow" />
+            <dl>
+            <a href="javascript:void(0)" onclick = show("1");><dt><img src="images/expenses_ico.png" />Expenses</dt></a>
+            <a href="javascript:Action1('expenses_list.html')" id="show1" style="display:none"><dd>Expenses List</dd></a>
+            </dl>
+            <dl>
+            <a href="javascript:void(0)" onclick = show("2");><dt><img src="images/approval_ico.png" />Approval</dt></a>
+            <a href="javascript:Action1('expenses_list1.html')" id="show2" style="display:none"><dd>Approval List</dd></a>
+            </dl>
+            <dl>
+            <a href="javascript:void(0)" onclick = show("3");><dt><img src="images/approval_ico.png" />User</dt></a>
+            <a href="javascript:Action1('expenses_list1.html')" id="show3" style="display:none"><dd>User List</dd></a>
+            </dl>
+            <dl>
+            <a href="javascript:void(0)" onclick = show("4");><dt><img src="images/approval_ico.png" />Role</dt></a>
+            <a href="javascript:Action1('expenses_list1.html')" id="show4" style="display:none"><dd>Role List</dd></a>
+            </dl>
+            <dl>
+            <a href="#"><dt><img src="images/reports_ico.png" />Reports</dt></a>
+            </dl>
+            <dl>
+            <a href="javascript:void(0)" onclick = show("5");><dt><img src="images/system_ico.png" />System</dt></a>
+            <div id="show5" style="display:none">
+            	<a href="#"><dd>Expenses Settings</dd></a>
+            	<a href="#"><dd>System Settings</dd></a>
+            	<a href="javascript:Action1('expenses_settings.html')"><dd>Claim Settings</dd></a>
+            </div>
+            </dl>
+    	</div>
+                    
+    	<div id="index_main_right_box">
+			<iframe style="margin-left:1px;" id="iframe" marginwidth=0 marginheight=0 width=100% height="100%" src="index1.html" frameborder=0 allowtransparency="ture"></iframe>
+	 
+        </div>
+
+    	<div class="clear"></div>
+        
+    </div>
+    <div id="index_bottom_box">DiaSorin S.p.A. - Capitale Sociale €55.948.257 R.E.A. 180729 Cod. Fiscale e Iscrizione Reg. Imprese di Vercelli 13144290155</div>
+
+	
+    
+</body>
+</html>

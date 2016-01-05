@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* --reset-- */
+
+*{margin:0;padding:0;font-size:14px; font-family:Tahoma, Geneva, sans-serif, 微软雅黑;}
+a{text-decoration:none; color:#1970BF;}
+a:hover{color:#003B79;text-decoration:none;}
+img{border:0;}
+li{list-style:none; list-style-type:none;}
+.clear{clear:both;}
+.fL{float:left;}
+.fR{float:right;}
+
+body{background:#f2f2f2;}
+.position{width:96%; height:40px; background:#edf6fa; line-height:40px; margin-bottom:15px; border-bottom:1px solid #d7e4ea; padding:0 2%}
+
+.list_main_box{width:95%; padding:0px 2%; height:100%;}
+.information_box{border:1px solid #bac7d2; width:100%; margin-bottom:20px;}
+.information_title{ width:98%; height:44px; background:#003b79; color:#fff; padding-left:2%; font-size:16px; line-height:44px;}
+.information_main{ width:96%; padding:1% 2% 2% 2%;}
+.information_main ul{width:100%; height:auto;}
+.information_main ul li{border-bottom:1px dotted #bac7d2; line-height:40px; width:100%; height:40px; padding-left:20px; background:url(../images/li_img.png) no-repeat left center;}
+
+.tr_bg{ background:#e9e9e9;}
+
+.list_title{width:100%; font-size:16px; font-weight:bold; margin-bottom:15px;}
+.list_box1{}
+.list_box1 table{ width:100%;}
+.list_box1 table td{ padding:5px;}
+.td_font{ text-align:right; padding-right:10px; width:150px;}
+.td_box{ text-align:left;}
+.select_box{width:183px; height:30px; line-height:30px; border:1px solid #bac7d2; outline:none;}
+.input_box{ border:1px solid #bac7d2; width:167px; height:20px; line-height:20px; padding:4px 7px; outline:none;}
+.reason_box{width:90%; border:1px solid #bac7d2; outline:none; height:40px; line-height:20px; padding:4px 7px;}
+.add_details_left_btn{ text-align:left}
+.add_details_right_btn{ text-align:right}
+.list_box2{ width:100%; margin-top:15px;border-top: 1px solid #d7e4ea; padding-top:15px;}
+.list_box2 table{width:100%; border-top:1px solid #bac7d2; border-left:1px solid #bac7d2;}
+
+
+.list_box2 table td{ border-right:1px solid #bac7d2; border-bottom:1px solid #bac7d2; height:30px; line-height:30px; text-align:center;}
+.list_box2 table td a{background:#1481d4; border-radius:5px; line-height:24px; color:#fff; padding:0px 10px; display:inline-block; margin-left:10px;}
+.td_width{ width:260px;}
+.list_box2 table td a:hover{ text-decoration:none; background:#32a3e7;}
+
+.td_title{background:#cbcdcc; height:30px; font-size:16px; color:#003b79; font-weight:bold; text-align:center;}
+
+.list_btn_box{margin-top:15px;}
+.review_btn{display:inline; float:left;}
+.submit_btn{display:inline; float:right; margin-left:15px;}
+.save_btn{display:inline; float:right; margin-left:15px;}
+.back_btn{display:inline; float:right;}
+.total_box{display:inline; float:left; width:50%; text-align:right; height:40px; vertical-align:middle; line-height:40px;}
+.total_box label{vertical-align:middle; line-height:40px; color:#e0911b; font-weight:bold;}
+.total_box input{vertical-align:middle; border:0; height:30px; margin:0px 10px; padding:4px 5px; width:100px; background:none; outline:none; font-weight:bold;}
+
+.finish_btn{display:inline; float:right; margin-left:15px; width:130px; height:40px; vertical-align:middle;}
+.cancel_btn{display:inline; float:right; margin-left:15px; width:130px; height:40px; vertical-align:middle;}
+
+.list_box3{width:100%; margin-top:15px;}
+.list_box3 table{width:100%; border-top:1px solid #bac7d2; border-left:1px solid #bac7d2;}
+.list_box3 table td{ border-right:1px solid #bac7d2; border-bottom:1px solid #bac7d2;text-align:center;}
+.list_box3 .td_title{background:#d9dfe4; height:30px; line-height:30px; font-size:16px; color:#003b79; font-weight:bold; text-align:center;}
+.list_box3 table td ul{ padding:15px 15px 0 15px;}
+.list_box3 table td ul li{margin-bottom:15px;}
+
+.list_pages_box{margin-top:15px; width:100%; text-align:center;}
+.pages{width:50%; display:inline; float:left;}
+.pages_font{font-weight:bold; font-size:18px; display:inline; float:right; line-height:40px; margin-right:20px;}
+.pages_input_box{background:url(../images/pages_input.png) no-repeat; width:40px; height:30px; padding:5px; display:inline; float:right;}
+.pages_input{width:40px; height:30px; outline:none; border:0px; text-align:center; font-size:14px; font-weight:bold;}
+.pages_go_box{display:inline-block; background:url(../images/pages_go.png) no-repeat; width:50px; height:40px; display:inline; float:right;}
+.pages_go_box a{display:block; width:50px; height:40px;}
+.prev_btn{display:inline; float:right; margin-left:20px;}
+.prev_btn a{display:block; width:130px; height:40px;}
+
+
+.list_box4 table{width:100%; border-top:1px solid #bac7d2; border-left:1px solid #bac7d2;}
+.list_box4 table td{ border-right:1px solid #bac7d2; border-bottom:1px solid #bac7d2; height:30px; line-height:30px; text-align:center;}
+.list_box4 table td a{background:#1481d4; border-radius:5px; line-height:24px; color:#fff; padding:0px 10px; display:inline-block; margin-left:10px;}
+.list_box4 table td a:hover{ text-decoration:none; background:#32a3e7;}
+
+.list_tab_title{margin-top:15px;border-bottom: 1px solid #ccc;background: url("../images/bg-h2-sezione.png") repeat-x 0 0;border-left: 1px solid #eee;border-right: 1px solid #eee;border-top: 1px solid #eee; margin-bottom:5px; height:38px; width:98%; padding:0px 1%;}
+.list_tab_title a{font-family: "Clan";font-size: 1.41em;font-weight:bold;color:#1970BF;height:38px;line-height:38px; display:block; width:100%;}
+.list_tab_title a:hover{text-decoration:none;color: #003B79;}

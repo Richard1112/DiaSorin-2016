@@ -1,0 +1,10 @@
+﻿insert into t_sys_employee_role(roleCode, roleName) values('R001', 'VP');
+insert into t_sys_employee_role(roleCode, roleName) values('R002', 'Country Manager');
+insert into t_sys_employee_role(roleCode, roleName) values('R003', 'Director');
+insert into t_sys_employee_role(roleCode, roleName) values('R004', 'Manager');
+insert into t_sys_employee_role(roleCode, roleName) values('R005', 'Accountant');
+insert into t_sys_employee_role(roleCode, roleName) values('R006', 'GM');
+insert into t_sys_employee_role(roleCode, roleName) values('R007', 'Specialist');
+insert into t_sys_employee_role(roleCode, roleName) values('R008', 'Supervisor');
+insert into t_sys_employee_role(roleCode, roleName) values('R009', 'Board Member');
+insert into t_sys_employee_role(roleCode, roleName) values('R010', 'System Manager');

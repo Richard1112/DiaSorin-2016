@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="css/list.css" type="text/css" rel="stylesheet" />
+<link href="css/jcDate.css" rel="stylesheet" type="text/css"/>
+<script src="http://www.lanrenzhijia.com/ajaxjs/1.7.2/jquery-1.7.2.min.js"></script>
+<script src="js/jQuery-jcDate.js"></script>
+<script>
+$(function (){
+	$(".jcDate").jcDate({					       
+			IcoClass : "jcDateIco",
+			Event : "click",
+			Speed : 100,
+			Left : 0,
+			Top : 28,
+			format : "-",
+			Timeout : 100
+	});
+});
+</script>
+</head>
+
+<body>
+	<div class="position">Position : Home ＞ Expense Details</div>
+    
+    
+	<div class="list_main_box">
+   	  <div class="list_title">Expense Details</div> 
+        <div class="list_box1">
+        	<table border="0" cellpadding="0" cellspacing="0">
+            	<tbody>
+                	<tr>
+                    	<td class="td_font">Location:</td>
+                    	<td colspan="3" class="td_box">
+                            <select class="select_box">
+                                <option> Location </option>
+                                <option> Location </option>
+                                <option> Location </option>
+                          	</select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                    	<td class="td_font">Travel Reason:</td>
+                    	<td colspan="3" class="td_box">
+                            <textarea type="text" class="reason_box"></textarea>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="list_box3">
+        
+        	<table border="0" cellpadding="0" cellspacing="0">
+            	<tbody>
+                	<tr class="td_title">
+                    	<td>Day</td>
+                        <td>Expense Type </td>
+                        <td>Expense Amount</td>
+                        <td>Comments</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        	<ul>
+                            	<li><input class="jcDate" />~<input class="jcDate" /></li>
+                                <li><input class="jcDate" />~<input class="jcDate" /></li>
+                                <li><input class="jcDate" />~<input class="jcDate" /></li>
+                            </ul>
+                        </td>
+                        <td>
+                        	<ul>
+                            	<li>
+                                	<select class="select_box">
+                                        <option> select </option>
+                                        <option> Travel </option>
+                                        <option> Location </option>
+                                    </select>
+                                </li>
+                                <li>
+                                	<select class="select_box">
+                                        <option> select </option>
+                                        <option> Travel </option>
+                                        <option> Location </option>
+                                    </select>
+                                </li>
+                                <li>
+                                	<select class="select_box">
+                                        <option> select </option>
+                                        <option> Travel </option>
+                                        <option> Location </option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                        	<ul>
+                            	<li><input type="text" class="input_box" /></li>
+                                <li><input type="text" class="input_box" /></li>
+                                <li><input type="text" class="input_box" /></li>
+                            </ul>
+                        </td>
+                        <td>
+                        	<ul>
+                            	<li><input type="text" class="input_box" /></li>
+                                <li><input type="text" class="input_box" /></li>
+                                <li><input type="text" class="input_box" /></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+			
+            
+            
+          <div class="list_btn_box">
+          		<div class="total_box"><label>Total</label><input type="text" value="0.00" /></div>
+                <div class="finish_btn"><a href="#"><img src="images/finish_btn.png" /></a></div>
+                <div class="cancel_btn"><a href="#"><img src="images/cancel_btn.png" /></a></div>
+                <div class="clear"></div>
+            </div>
+      </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="css/list.css" type="text/css" rel="stylesheet" />
+<link href="css/jcDate.css" rel="stylesheet" type="text/css"/>
+<script src="http://www.lanrenzhijia.com/ajaxjs/1.7.2/jquery-1.7.2.min.js"></script>
+<script src="js/jQuery-jcDate.js"></script>
+<script>
+$(function (){
+	$(".jcDate").jcDate({					       
+			IcoClass : "jcDateIco",
+			Event : "click",
+			Speed : 100,
+			Left : 0,
+			Top : 28,
+			format : "-",
+			Timeout : 100
+	});
+});
+</script>
+</head>
+
+<body>
+	<div class="position">Position : Home ＞ Retrieval List</div>
+    
+    
+	<div class="list_main_box">
+   	  <div class="list_title">Retrieval List</div> 
+        <div class="list_box1">
+        	<table border="0" cellpadding="0" cellspacing="0">
+            	<tbody>
+                	<tr>
+                    	<td class="td_font">name:</td>
+                    	<td class="td_box">
+                            <input class="input_box" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                   	  <td><div class="add_details_left_btn"><a href="#"><img src="images/retrieval_btn.png" /></a></div></td>
+                        <td class="td_box">
+                        	<div class="add_details_right_btn"><a href="#"><img src="images/new_users.png" /></a></div>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="list_box2">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+                
+                	<tr class="td_title">
+                    	<td>中文姓名</td>
+                        <td>英文姓名</td>
+                        <td>性别</td>
+                        <td>角色</td>
+                        <td>部门</td>
+                    </tr>
+                    
+                    <tr>
+                    	<td>lin</td>
+                        <td>lin</td>
+                        <td>woman</td>
+                        <td></td>
+                        <td class="td_width"><a href="#">修改</a><a href="#">删除</a><a href="#">密码重置</a></td>
+                    </tr>
+                    <tr class="tr_bg">
+                    	<td>lin</td>
+                        <td>lin</td>
+                        <td>woman</td>
+                        <td></td>
+                        <td class="td_width"><a href="#">修改</a><a href="#">删除</a><a href="#">密码重置</a></td>
+                    </tr>
+                    <tr>
+                    	<td>lin</td>
+                        <td>lin</td>
+                        <td>woman</td>
+                        <td></td>
+                        <td class="td_width"><a href="#">修改</a><a href="#">删除</a><a href="#">密码重置</a></td>
+                    </tr>
+                </tbody>
+			</table>
+            <div class="list_pages_box">
+           	  <div class="pages">
+                    <div class="pages_go_box"><a href="#" class="pages_go"></a></div>
+                    <div class="pages_input_box"><input class="pages_input" type="text" /></div>
+                <div class="pages_font">1/10</div>
+                </div>
+            	
+              <div class="prev_btn"><a href="#"><img src="images/next_btn.png" /></a></div>
+                <div class="prev_btn"><a href="#"><img src="images/prev_btn.png" /></a></div>
+            </div>
+      </div>
+    </div>
+    
+</body>
+</html>

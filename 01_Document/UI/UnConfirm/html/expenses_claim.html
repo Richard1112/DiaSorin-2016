@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="css/list.css" type="text/css" rel="stylesheet" />
+<link href="css/jcDate.css" rel="stylesheet" type="text/css"/>
+<script src="http://www.lanrenzhijia.com/ajaxjs/1.7.2/jquery-1.7.2.min.js"></script>
+<script src="js/jQuery-jcDate.js"></script>
+<script>
+$(function (){
+	$(".jcDate").jcDate({					       
+			IcoClass : "jcDateIco",
+			Event : "click",
+			Speed : 100,
+			Left : 0,
+			Top : 28,
+			format : "-",
+			Timeout : 100
+	});
+});
+</script>
+</head>
+
+<body>
+	<div class="position">Position : Home ＞ Expense Claim</div>
+    
+    
+	<div class="list_main_box">
+   	  <div class="list_title">Expense Claim</div> 
+        <div class="list_box1">
+        	<table border="0" cellpadding="0" cellspacing="0">
+            	<tbody>
+                	<tr>
+                    	<td class="td_font">Date:</td>
+                    	<td class="td_box">
+                            <input class="jcDate" />~<input class="jcDate" />
+                        </td>
+                        <td class="td_font">Travel Location Type:</td>
+                        <td class="td_box">
+                            <select class="select_box">
+                                <option> select </option>
+                                <option> Travel </option>
+                                <option> Location </option>
+                          	</select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                    	<td class="td_font">Travel Reason:</td>
+                    	<td colspan="3" class="td_box">
+                            <textarea type="text" class="reason_box"></textarea>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2" class="td_box">
+                        	<div class="add_details_left_btn"><a href="expense_details.html"><img src="images/add_details_btn.png" /></a></div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="list_box2">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+                
+                	<tr class="td_title">
+                    	<td>No.</td>
+                        <td>Location</td>
+                        <td>Purpose</td>
+                        <td>Total</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                    	<td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#">Modify</a></td>
+                    </tr>
+                    <tr>
+                    	<td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#">Modify</a></td>
+                    </tr>
+                    <tr>
+                    	<td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+			</table>
+            <div class="list_btn_box">
+            	<div class="review_btn"><a href="#"><img src="images/review_btn.png" /></a></div>
+                <div class="submit_btn"><a href="#"><img src="images/submit_btn.png" /></a></div>
+                <div class="save_btn"><a href="#"><img src="images/save_btn.png" /></a></div>
+                <div class="back_btn"><a href="#"><img src="images/back_btn.png" /></a></div>
+            </div>
+      </div>
+    </div>
+    
+</body>
+</html>

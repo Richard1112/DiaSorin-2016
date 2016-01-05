@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="css/list.css" type="text/css" rel="stylesheet" />
+<link href="css/jcDate.css" rel="stylesheet" type="text/css"/>
+<script src="http://www.lanrenzhijia.com/ajaxjs/1.7.2/jquery-1.7.2.min.js"></script>
+<script src="js/jQuery-jcDate.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="js/news.js"></script>
+<script>
+$(function (){
+	$(".jcDate").jcDate({					       
+			IcoClass : "jcDateIco",
+			Event : "click",
+			Speed : 100,
+			Left : 0,
+			Top : 28,
+			format : "-",
+			Timeout : 100
+	});
+});
+</script>
+</head>
+
+<body>
+	<div class="position">Position : Home ＞ Travel type List</div>
+    
+    
+	<div class="list_main_box">
+   	  <div class="list_title">Travel type List</div> 
+      <input type="hidden" id="hidshow" name="hidshow" />
+        <div class="list_tab_title"><a href="javascript:void(0)" onclick = show("1");>新增出差地类型</a></div>
+        <div class="list_box4" id="show1" style="display:none">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+                
+                	<tr class="td_title">
+                    	<td>出差地类型</td>
+                        <td>出差地Code</td>
+                        <td>出差地name</td>
+                        <td class="td_width">操作</td>
+                    </tr>
+                    
+                    <tr>
+                    	<td>短距离</td>
+                        <td>002</td>
+                        <td>苏州</td>
+                        <td><a href="#">修改</a><a href="#">删除</a></td>
+                    </tr>
+                    <tr class="tr_bg">
+                    	<td>短距离</td>
+                        <td>002</td>
+                        <td>苏州</td>
+                        <td><a href="#">修改</a><a href="#">删除</a></td>
+                    </tr>
+                    <tr>
+                    	<td>短距离</td>
+                        <td>002</td>
+                        <td>苏州</td>
+                        <td><a href="#">修改</a><a href="#">删除</a></td>
+                    </tr>
+                </tbody>
+			</table>
+      </div>
+      
+      	<div class="list_tab_title"><a href="javascript:void(0)" onclick = show("2");>新增人员级别</a></div>
+        <div class="list_box4" id="show2" style="display:none">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+                
+                	<tr class="td_title">
+                    	<td>级别Code</td>
+                        <td>级别name</td>
+                        <td class="td_width">操作</td>
+                    </tr>
+                    
+                    <tr>
+                    	<td>001</td>
+                        <td>最高</td>
+                        <td><a href="#">修改</a><a href="#">删除</a></td>
+                    </tr>
+                    <tr class="tr_bg">
+                    	<td>001</td>
+                        <td>最高</td>
+                        <td><a href="#">修改</a><a href="#">删除</a></td>
+                    </tr>
+                    <tr>
+                    	<td>001</td>
+                        <td>最高</td>
+                        <td><a href="#">修改</a><a href="#">删除</a></td>
+                    </tr>
+                    
+                </tbody>
+			</table>
+      </div>
+      
+      	<div class="list_tab_title"><a href="javascript:void(0)" onclick = show("3");>新增人员级别</a></div>
+      	<div class="list_box4" id="show3" style="display:none">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+                
+                	<tr class="td_title">
+                    	<td>报销项目Code</td>
+                        <td>报销项目name</td>
+                        <td>所属报销项目Code</td>
+                        <td class="td_width">操作</td>
+                    </tr>
+                    
+                    <tr>
+                    	<td>S001</td>
+                        <td>Taxi</td>
+                        <td>S000</td>
+                        <td><a href="#">修改</a><a href="#">删除</a></td>
+                    </tr>
+                    
+                    <tr class="tr_bg">
+                    	<td>S001</td>
+                        <td>Taxi</td>
+                        <td>S000</td>
+                        <td><a href="#">修改</a><a href="#">删除</a></td>
+                    </tr>
+                    
+                </tbody>
+			</table>
+      </div>
+      
+      	<div class="list_tab_title"><a href="javascript:void(0)" onclick = show("4");>新增成本中心</a></div>
+        <div class="list_box4" id="show4" style="display:none">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+                
+                	<tr class="td_title">
+                    	<td>成本中心Code</td>
+                        <td>成本中心name</td>
+                        <td class="td_width">操作</td>
+                    </tr>
+                    
+                    <tr>
+                    	<td>3500</td>
+                        <td>G&A</td>
+                        <td><a href="#">修改</a><a href="#">删除</a></td>
+                    </tr>
+                    <tr class="tr_bg">
+                    	<td>3500</td>
+                        <td>G&A</td>
+                        <td><a href="#">修改</a><a href="#">删除</a></td>
+                    </tr>
+                    <tr>
+                    	<td>3500</td>
+                        <td>G&A</td>
+                        <td><a href="#">修改</a><a href="#">删除</a></td>
+                    </tr>
+                    
+                </tbody>
+			</table>
+      </div>
+      
+    </div>
+    
+</body>
+</html>

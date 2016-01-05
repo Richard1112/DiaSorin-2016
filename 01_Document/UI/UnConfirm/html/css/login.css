@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* --reset-- */
+
+*{margin:0;padding:0;font-size:14px; font-family:Tahoma, Geneva, sans-serif, 微软雅黑; color:#747474;}
+a{color:#747474;text-decoration:none;}
+a:hover{color:#00a0e9;}
+img{border:0;}
+li{list-style:none;list-style-type:none;}
+.clear{clear:both;}
+.fL{float:left;}
+.fR{float:right;}
+
+
+#login{width:740px; height:310px; position:absolute; top:50%; left:50%; margin-top:-155px; margin-left:-370px; background:#d9dfe4; border-radius:10px;}
+
+#login_left{display:inline; float:left; width:300px; height:310px; background:url(../images/login_logo.png) center center no-repeat;}
+#login_right{display:inline; float:left; background:url(../images/login_line.png) left center no-repeat; width:400px; height:270px; padding:20px;}
+
+#login_title{ font-size:14px; color:#003b79; font-family:Tahoma, arial, sans-serif; font-weight:bold; margin-top:10px; padding-left:25px;}
+#login_user{width:300px; height:48px; border:0px; outline:none; background:url(../images/user_img.png) 10px center no-repeat; padding-left:40px;}
+
+#login_user_box{width:340px; height:48px; border:1px solid #bac7d2; background:#fff; margin:20px auto 0 auto;}
+#login_password_box{margin:15px auto 0 auto;width:340px; height:48px; border:1px solid #bac7d2; background:#fff;}
+#login_password{width:300px; height:48px; border:0px; outline:none; background:url(../images/password_img.png) 10px center no-repeat; padding-left:40px;}
+
+#font_box{width:340px; margin:15px auto 0 auto;}
+#remember_box{display:inline; float:left;}
+#remember_box span{ vertical-align:middle; padding-left:5px;}
+#forgot_box{display:inline; float:right; text-decoration:underline;}
+#forgot_box a{color:#007ad7;}
+#formcheckbox{border:1px solid #ddd; width:16px; height:16px; vertical-align:middle;}
+
+#sign_btn{width:343px; height:48px; margin:15px auto 0 auto;}

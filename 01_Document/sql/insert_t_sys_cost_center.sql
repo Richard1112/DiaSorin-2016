@@ -1,0 +1,13 @@
+﻿insert into t_sys_cost_center(costCenterCode, costCenterName, costCenterDisplayName) values('CN3020', 'After Market Services', 'After Market Services');
+insert into t_sys_cost_center(costCenterCode, costCenterName, costCenterDisplayName) values('CN3187', 'Logistic Costs', 'Logistic Costs');
+insert into t_sys_cost_center(costCenterCode, costCenterName, costCenterDisplayName) values('CN3372', 'Regulatory', 'Regulatory');
+insert into t_sys_cost_center(costCenterCode, costCenterName, costCenterDisplayName) values('CN3425', 'Sales Domestic', 'Sales Domestic');
+insert into t_sys_cost_center(costCenterCode, costCenterName, costCenterDisplayName) values('CN3435', 'MKT Domestic', 'MKT Domestic');
+insert into t_sys_cost_center(costCenterCode, costCenterName, costCenterDisplayName) values('CN3500', 'G&A', 'G&A');
+insert into t_sys_cost_center(costCenterCode, costCenterName, costCenterDisplayName) values('CN3440', 'Sales Export', 'Sales Export');
+insert into t_sys_cost_center(costCenterCode, costCenterName, costCenterDisplayName) values('CN3445', 'MKT Export', 'MKT Export');
+insert into t_sys_cost_center(costCenterCode, costCenterName, costCenterDisplayName) values('CN3514', 'MKT Great China', 'MKT Great China');
+insert into t_sys_cost_center(costCenterCode, costCenterName, costCenterDisplayName) values('CN3614', 'G&A', 'G&A');
+insert into t_sys_cost_center(costCenterCode, costCenterName, costCenterDisplayName) values('CN3714', 'G&A', 'G&A');
+insert into t_sys_cost_center(costCenterCode, costCenterName, costCenterDisplayName) values('CN3814', 'G&A', 'G&A');
+insert into t_sys_cost_center(costCenterCode, costCenterName, costCenterDisplayName) values('CN3914', 'G&A', 'G&A');

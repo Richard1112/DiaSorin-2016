@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="css/list.css" type="text/css" rel="stylesheet" />
+<link href="css/jcDate.css" rel="stylesheet" type="text/css"/>
+<script src="http://www.lanrenzhijia.com/ajaxjs/1.7.2/jquery-1.7.2.min.js"></script>
+<script src="js/jQuery-jcDate.js"></script>
+<script>
+$(function (){
+	$(".jcDate").jcDate({					       
+			IcoClass : "jcDateIco",
+			Event : "click",
+			Speed : 100,
+			Left : 0,
+			Top : 28,
+			format : "-",
+			Timeout : 100
+	});
+});
+</script>
+</head>
+
+<body>
+	<div class="position">Position : Home ＞ Expenses Settings</div>
+    
+    
+	<div class="list_main_box">
+   	  <div class="list_title">Expenses Settings</div> 
+        <div class="list_box1">
+        	<table border="0" cellpadding="0" cellspacing="0">
+            	<tbody>
+                	<tr>
+                    	<td class="td_font">Expense Type:</td>
+                    	<td class="td_box">
+                            <select class="select_box">
+                                <option> select </option>
+                                <option> Travel </option>
+                                <option> Location </option>
+                          	</select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="list_box2">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+                
+                	<tr class="td_title">
+                    	<td style="background:#f2f2f2;"></td>
+                        <td>International</td>
+                        <td>Hong Kong, Macao And Taiwan</td>
+                        <td>Internal</td>
+                    </tr>
+                    
+                    <tr>
+                    	<td>Level 1</td>
+                        <td>600</td>
+                        <td>600</td>
+                        <td>600</td>
+                    </tr>
+                    <tr>
+                    	<td>Level 2</td>
+                        <td>600</td>
+                        <td>600</td>
+                        <td>600</td>
+                    </tr>
+                    <tr>
+                    	<td>Level 3</td>
+                        <td>600</td>
+                        <td>600</td>
+                        <td>600</td>
+                    </tr>
+                </tbody>
+			</table>
+            <div class="list_btn_box">
+                <div class="save_btn"><a href="#"><img src="images/save_btn.png" /></a></div>
+                <div class="clear"></div>
+            </div>
+      </div>
+    </div>
+    
+</body>
+</html>

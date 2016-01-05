@@ -1,0 +1,1 @@
+﻿insert into t_workflow_defination(workflowId, workflowName, workflowCategory, workflowType, deleteFlg, addTimestamp, addUserKey, updTimestamp, updUserKey, updPgmId) values('WF01', 'Expenses Approval ', 'WFCG01', '0', '0', '2015-04-01 00:00:00', 'diasorin', '2015-04-01 00:00:00', 'diasorin', 'basicData');

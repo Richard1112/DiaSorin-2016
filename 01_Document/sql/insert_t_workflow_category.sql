@@ -1,0 +1,1 @@
+﻿insert into t_workflow_category(categoryId, categoryName, deleteFlg, addTimestamp, addUserKey, updTimestamp, updUserKey, updPgmId) values('WFCG01', 'Finance', '0', '2015-04-01 00:00:00', 'diasorin', '2015-04-01 00:00:00', 'diasorin', 'basicData');
